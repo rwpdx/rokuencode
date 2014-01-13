@@ -39,7 +39,7 @@ while($row=mysql_fetch_array($result))
 	$base_name="$title $ftime $subtitle";
 	$full_title="$title $ftime $subtitle.mp4";
 $HandbrakeCLI='/usr/bin/HandBrakeCLI -i "'.$directory.'"/"'.$filename.'" -o "'.$directory.'"/"'.$full_title.'" -e x264 -b 1500 -E faac -r 29.97 -B 160 -R 48 -w 720 -O';
-$imagemagick='/usr/bin/imagemagick "'.$directory.'"/"'.$filename.'.png" "'.$directory.'"/"'.$base_name.".jpg';	
+$imagemagick='/usr/bin/convert "'.$directory.'"/"'.$filename.'.png" "'.$directory.'"/"'.$base_name.".jpg';	
 	shell_exec($HandbrakeCLI);
 	shell_exec($imagemagick);
 	}
