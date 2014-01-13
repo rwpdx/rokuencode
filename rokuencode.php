@@ -35,7 +35,7 @@ while($row=mysql_fetch_array($result))
 	{
 	$title=$row['title'];
 	$ftime=$row['ftime'];
-	$subtitle=$row['subtitle'];i
+	$subtitle=$row['subtitle'];
 	$base_name="$title $ftime $subtitle";
 	$full_title="$title $ftime $subtitle.mp4";
 $HandbrakeCLI='/usr/bin/HandBrakeCLI -i "'.$directory.'"/"'.$filename.'" -o "'.$directory.'"/"'.$full_title.'" -e x264 -b 1500 -E faac -r 29.97 -B 160 -R 48 -w 720 -O';
