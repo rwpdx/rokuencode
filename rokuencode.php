@@ -2,7 +2,7 @@
 /***
 by robert@rebelwords.org
 v 0.1
-on Jan 12th, 2014
+on Jan 11th, 2014
 ****rokuencode.php*****
 **This script is intended to be called from MythTV as a user job.
 **Call it like this from MythTV's user jobs: /usr/bin/rokuencode.php "%DIR%" "%FILE%"
