@@ -88,6 +88,7 @@ $gencutlist='/usr/bin/mythutil --gencutlist --chanid "'.$channel.'" --starttime 
 shell_exec($gencutlist);
 /*Remove the cutlist.  mythtranscode does lose some image quality. Not sure how to improve */
 $transcode='/usr/bin/mythtranscode --honorcutlist --mpeg2 -i "'.$directory.'"/"'.$filename.'" -o "'.$directory.'"/"'.$filename.'".tmp';
+shell_exec($transcode);
 /*Replace file with freshly transcoded one.*/
 $mvold='/bin/mv "'.$directory.'"/"'.$filename.'" "'.$directory.'"/"'.$filename.'".old';
 $mvnew='/bin/mv "'.$directory.'"/"'.$filename.'".tmp "'.$directory.'"/"'.$filename.'"';
