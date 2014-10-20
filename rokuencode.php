@@ -120,7 +120,7 @@ ob_start();
   <year><?php echo "$air_year"?></year>
   <genre><?php echo "$category"?></genre>
   <mpaa>NR</mpaa>
-  <director>Not Avaiable</director>
+  <director>Not Available</director>
   <actors>Not Available</actors>
   <description><?php echo "$description"?></description>
   <length>Not available</length>
